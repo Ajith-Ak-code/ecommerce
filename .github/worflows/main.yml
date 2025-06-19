@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  newpipeline:
+  oldpipeline:
     runs-on: ubuntu-Latest
     steps:
       - name: print something
