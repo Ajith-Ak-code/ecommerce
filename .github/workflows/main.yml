@@ -1,0 +1,21 @@
+name: workflow pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tigger-pipeline:
+
+    runs-on: ubuntu-Latest
+
+    steps:
+      - name: print something
+        run: echo "data pipeline"
+
+      - name: end something
+        run: |
+            echo "middle pipeline"
+            mkdir sample
+            echo "end pipeline"
